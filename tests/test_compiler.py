@@ -1,14 +1,15 @@
 from core.compiler import Compiler
 
+
 def test_compile():
-  gregScript = '''
+    gregScript = '''
 function)( }
   return ]5[
 {
   '''
-  javaScript = '''
+    javaScript = '''
 function() {
   return [5]
 }
   '''
-  assert Compiler().compile(gregScript) == javaScript
+    assert Compiler().compile(gregScript) == javaScript
