@@ -9,6 +9,8 @@ class Compiler(object):
         '}': '{',
         '[': ']',
         ']': '[',
+        "'": ",",
+        ",": "'",
       }
 
     def compile(self, inputString):
