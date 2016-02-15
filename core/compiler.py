@@ -1,11 +1,13 @@
 #!/usr/bin/env python3
-import re
+
 class Compiler(object):
   CHAR_MAPPING = {
     ')': '(',
     '(': ')',
     '{': '}',
-    '}': '{'
+    '}': '{',
+    '[': ']',
+    ']': '[',
   }
 
   def compile(self, inputString):
